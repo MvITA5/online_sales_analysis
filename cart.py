@@ -11,9 +11,9 @@ class Cart:
     if not self.cart_items:
       print("Cart is empty.")
     return
-      print("Cart Items:")
-   for product in self.cart_items:
-      product.display_info()
+    print("Cart Items:")
+    for product in self.cart_items:
+       product.display_info()
 
   def total_payment(self):
      total = sum(item.price * item.quantity for item in self.cart_items)
